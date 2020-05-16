@@ -1,0 +1,774 @@
+@media screen and (max-width: 1200px){
+    body{
+        overflow-x: hidden;
+    }
+    .look{
+        overflow: hidden;
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container{
+        max-width: 748px;
+        margin: 0 auto; 
+    }
+    .menu_main{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    .mobile__nav{
+        display: block;
+        position: fixed;
+        top: 0;
+        transform: translateX(700px);
+        left: 0;
+        width: 768px;
+        height: 100vh;
+        margin-left: 61%;
+        background-color: rgba(0,0,0,0.5);
+        transition: 0.5s ease;
+    }
+    .mobile__nav.mobile-nav--active{
+        transform: translateX(0px);
+    }
+    .mobile__nav_title{
+        color: white;
+        letter-spacing: 2px;
+        margin-top: 23px;
+        margin-left: 20px;
+    }
+    .mobile__nav_item a{
+        outline: none;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding-left: 20px;
+    }
+    .nav ul{
+        padding-top: 28px;
+    }
+    .mobile__nav_item{
+        line-height: 30px;
+        height: 35px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding-top: 10px;
+        padding-left: 5px;
+    }
+    .mobile__nav_item:hover{
+        border-left: 5px solid #fea100;
+        padding-left: 0;
+    }
+    .active{
+        border-left: 5px solid #fea100;
+        padding-left: 0;
+    }
+    .nav__active{
+        border-left: 5px solid #fea100;
+        padding-left: 10px;
+    }
+    .header-burger{ 
+        z-index: 999999;
+        margin-left: 66%;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background-color: #fea100;
+        margin-right: 0px;
+    }
+    .menu-icon {
+        margin-top: 17px;
+        margin-left: 5px;
+        display: block;
+        align-items: center;
+        position: relative;
+        width: 30px;
+        height: 3px;
+        background:white;
+      }
+    
+      .menu-icon::before {
+        position: absolute;
+        left: 0;
+        top: -10px;
+        content: '';
+        width: 30px;
+        height: 3px;
+        background: white;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    
+      }
+    
+      .menu-icon::after {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        content: '';
+        width: 30px;
+        height: 3px;
+        background: white;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+    
+      .menu-icon-active {
+        background-color: transparent;
+      }
+    
+      .menu-icon.menu-icon-active::before {
+        transform: rotate(45deg);
+        top: 0;
+        height: 3px;
+        background-color: White;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+      }
+    
+      .menu-icon.menu-icon-active::after {
+        transform: rotate(-45deg);
+        top: 0;
+        height: 3px;
+        background-color: white;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+      }
+      .page_2, .page_3{
+          display: none;
+      }
+      .page_1{
+          text-align: center;
+          padding-left:15%;
+      }
+      .about__btn{
+          margin-left: 35%;
+      }
+      .cards{
+          flex-flow: column;
+          height: 1600px;
+      }
+      .card__item{
+          height: 710px;
+          position: relative;
+          margin-top: 50px;
+          margin: 0 auto;
+          
+      }
+      .footer{
+          margin-top:1290px;
+      }
+      .line__con{
+          width: 250px;
+      }
+      .social{
+          padding-left: 38.1%;
+      }
+      .wrappers{
+          padding-top: 30%;
+      }
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        max-width: 391px;
+        margin: 0 auto;
+    }
+    .wrappers{
+        padding-top: 60%;
+    }
+    .wrap_1{
+        font-size: 40px;
+    }
+    .wrap_2{
+        font-size: 30px;
+    }
+    .call__item_2 p{
+        font-size: 28px;
+    }
+    .page_1{
+        padding-left: 0;
+    }
+    .page_1 p{
+        width: 391px;
+    }
+    .about__btn{
+        margin-left: 33%;
+    }
+    .card__item{
+        width: 391px;
+    }
+    .card__item img{
+        width: 391px;
+    }
+    .food__name{
+        width: 300px;
+    }
+    .mark{
+        padding-left: 15px;
+    }
+    .header-burger{
+        margin-left: 30%;
+    }
+    .mark__food{
+        width: 350px;
+    }
+    
+    .menu_main{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    .mobile__nav{
+        display: block;
+        position: fixed;
+        top: 0;
+        transform: translateX(1000px);
+        left: 0;
+        width: 768px;
+        margin-left: 0;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.7);
+        transition: 0.5s ease;
+    }
+    .mobile__nav.mobile-nav--active{
+        position: fixed;
+        transform: translateX(0px);
+    }
+    .mobile__nav_title{
+        color: white;
+        letter-spacing: 2px;
+        margin-top: 23px;
+        margin-left: 20px;
+    }
+    .mobile__nav_item a{
+        outline: none;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding-left: 20px;
+    }
+    .nav ul{
+        padding-top: 28px;
+    }
+    .mobile__nav_item{
+        line-height: 30px;
+        height: 35px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding-top: 10px;
+        padding-left: 5px;
+    }
+    .mobile__nav_item:hover{
+        border-left: 5px solid #fea100;
+        padding-left: 0;
+    }
+    .active{
+        border-left: 5px solid #fea100;
+        padding-left: 0;
+    }
+    .nav__active{
+        border-left: 5px solid #fea100;
+        padding-left: 10px;
+    }
+    .header-burger{ 
+        z-index: 999999;
+        margin-left: 111px;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background-color: #fea100;
+        margin-right: 0px;
+    }
+    .menu-icon {
+        margin-top: 17px;
+        margin-left: 5px;
+        display: block;
+        align-items: center;
+        position: relative;
+        width: 30px;
+        height: 3px;
+        background:white;
+      }
+    
+      .menu-icon::before {
+        position: absolute;
+        left: 0;
+        top: -10px;
+        content: '';
+        width: 30px;
+        height: 3px;
+        background: white;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    
+      }
+    
+      .menu-icon::after {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        content: '';
+        width: 30px;
+        height: 3px;
+        background: white;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+    
+      .menu-icon-active {
+        background-color: transparent;
+      }
+    
+      .menu-icon.menu-icon-active::before {
+        transform: rotate(45deg);
+        top: 0;
+        height: 3px;
+        background-color: White;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+      }
+    
+      .menu-icon.menu-icon-active::after {
+        transform: rotate(-45deg);
+        top: 0;
+        height: 3px;
+        background-color: white;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+      }
+      .page_2, .page_3{
+          display: none;
+      }
+      .about__btn{
+          margin-left: 35%;
+      }
+      .cards{
+          flex-flow: column;
+          height: 1600px;
+      }
+      .card__item{
+          height: 620px;
+          position: relative;
+          margin-top: 50px;
+          margin: 0 auto;
+          
+      }
+      .footer{
+          margin-top:1290px;
+      }
+      .line__con{
+          width: 90px;
+      }
+      .social{
+          padding-left: 27%;
+      }
+}
+
+@media screen and (max-width: 411px){
+    .container{
+        max-width: 340px;
+        margin: 0 auto;
+    }
+    .wrappers{
+        padding-top: 60%;
+    }
+    .wrap_1{
+        font-size: 40px;
+    }
+    .wrap_2{
+        font-size: 30px;
+    }
+    .call__item_2 p{
+        font-size: 21px;
+    }
+    .page_1{
+        padding-left: 10px;
+    }
+    .page_1 p{
+        width: 320px;
+    }
+    .about__btn{
+        margin-left: 33%;
+    }
+    .card__item{
+        width: 320px;
+    }
+    .card__item img{
+        width: 320px;
+    }
+    .food__name{
+        width: 300px;
+        border-bottom: 0;
+    }
+    .mark{
+        padding-left: 5px;
+    }
+    .mark__food{
+        width: 310px;
+        padding-left: 6%;
+    }
+    .mark__num{
+        font-size: 18px;
+    }
+    .menu_main{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    .mobile__nav{
+        display: block;
+        position: fixed;
+        top: 0;
+        transform: translateX(411px);
+        left: 0;
+        width: 768px;
+        margin-left: 0;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.7);
+        transition: 0.5s ease;
+    }
+    .mobile__nav.mobile-nav--active{
+        position: fixed;
+        transform: translateX(0px);
+    }
+    .mobile__nav_title{
+        color: white;
+        letter-spacing: 2px;
+        margin-top: 23px;
+        margin-left: 20px;
+    }
+    .mobile__nav_item a{
+        outline: none;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding-left: 20px;
+    }
+    .nav ul{
+        padding-top: 28px;
+    }
+    .mobile__nav_item{
+        line-height: 30px;
+        height: 35px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding-top: 10px;
+        padding-left: 5px;
+    }
+    .mobile__nav_item:hover{
+        border-left: 5px solid #fea100;
+        padding-left: 0;
+    }
+    .active{
+        border-left: 5px solid #fea100;
+        padding-left: 0;
+    }
+    .nav__active{
+        border-left: 5px solid #fea100;
+        padding-left: 10px;
+    }
+    .header-burger{ 
+        z-index: 999999;
+        margin-left: 50px;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background-color: #fea100;
+        margin-right: 0px;
+    }
+    .menu-icon {
+        margin-top: 17px;
+        margin-left: 5px;
+        display: block;
+        align-items: center;
+        position: relative;
+        width: 30px;
+        height: 3px;
+        background:white;
+      }
+    
+      .menu-icon::before {
+        position: absolute;
+        left: 0;
+        top: -10px;
+        content: '';
+        width: 30px;
+        height: 3px;
+        background: white;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    
+      }
+    
+      .menu-icon::after {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        content: '';
+        width: 30px;
+        height: 3px;
+        background: white;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+    
+      .menu-icon-active {
+        background-color: transparent;
+      }
+    
+      .menu-icon.menu-icon-active::before {
+        transform: rotate(45deg);
+        top: 0;
+        height: 3px;
+        background-color: White;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+      }
+    
+      .menu-icon.menu-icon-active::after {
+        transform: rotate(-45deg);
+        top: 0;
+        height: 3px;
+        background-color: white;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+      }
+      .page_2, .page_3{
+          display: none;
+      }
+      .about__btn{
+          margin-left: 30%;
+      }
+      .cards{
+          flex-flow: column;
+          height: 1600px;
+      }
+      .card__item{
+          height: 570px;
+          position: relative;
+          margin-top: 50px;
+          margin: 0 auto;
+          
+      }
+      .footer{
+          margin-top:1290px;
+      }
+      .line__con{
+          width: 50px;
+      }
+      .social{
+          padding-left: 27%;
+      }
+      .line{
+          width: 300px;
+          margin-left: 10px;
+      }
+      .call .container{
+          padding-top: 30px;
+      }
+}
+
+@media screen and (max-width: 360px){
+    .container{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .wrappers{
+        padding-top: 60%;
+    }
+    .wrap_1{
+        font-size: 30px;
+    }
+    .wrap_2{
+        font-size: 20px;
+    }
+    .call__item_2 p{
+        font-size: 14px;
+    }
+    .page_1{
+        padding-left: 5px;
+    }
+    .page_1 p{
+        width: 290px;
+    }
+    .card__item{
+        width: 300px;
+    }
+    .card__item img{
+        width: 300px;
+    }
+    .food__name{
+        width: 290px;
+        padding-left: 5px;
+        border-bottom: 0;
+    }
+    .mark{
+        padding-left: 5px;
+    }
+    .mark__food{
+        width: 290px;
+        padding-left: 6%;
+    }
+    .mark__num{
+        font-size: 18px;
+        padding-left: 2px;
+    }
+    .menu_main{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    .mobile__nav{
+        display: block;
+        position: fixed;
+        top: 0;
+        transform: translateX(411px);
+        left: 0;
+        width: 414px;
+        margin-left: 0;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.7);
+        transition: 0.5s ease;
+    }
+    .mobile__nav.mobile-nav--active{
+        position: fixed;
+        transform: translateX(0px);
+    }
+    .mobile__nav_title{
+        color: white;
+        letter-spacing: 2px;
+        margin-top: 23px;
+        margin-left: 20px;
+    }
+    .mobile__nav_item a{
+        outline: none;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding-left: 20px;
+    }
+    .nav ul{
+        padding-top: 28px;
+    }
+    .mobile__nav_item{
+        line-height: 30px;
+        height: 35px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding-top: 10px;
+        padding-left: 5px;
+    }
+    .mobile__nav_item:hover{
+        border-left: 5px solid #fea100;
+        padding-left: 0;
+    }
+    .active{
+        border-left: 5px solid #fea100;
+        padding-left: 0;
+    }
+    .nav__active{
+        border-left: 5px solid #fea100;
+        padding-left: 10px;
+    }
+    .header-burger{ 
+        z-index: 999999;
+        margin-left: 50px;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background-color: #fea100;
+        margin-right: 0px;
+    }
+    .menu-icon {
+        margin-top: 17px;
+        margin-left: 5px;
+        display: block;
+        align-items: center;
+        position: relative;
+        width: 30px;
+        height: 3px;
+        background:white;
+      }
+    
+      .menu-icon::before {
+        position: absolute;
+        left: 0;
+        top: -10px;
+        content: '';
+        width: 30px;
+        height: 3px;
+        background: white;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    
+      }
+    
+      .menu-icon::after {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        content: '';
+        width: 30px;
+        height: 3px;
+        background: white;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    }
+    
+      .menu-icon-active {
+        background-color: transparent;
+      }
+    
+      .menu-icon.menu-icon-active::before {
+        transform: rotate(45deg);
+        top: 0;
+        height: 3px;
+        background-color: White;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+      }
+    
+      .menu-icon.menu-icon-active::after {
+        transform: rotate(-45deg);
+        top: 0;
+        height: 3px;
+        background-color: white;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+      }
+      .page_2, .page_3{
+          display: none;
+      }
+      .about__btn{
+          margin-left: 25%;
+      }
+      .cards{
+          flex-flow: column;
+          height: 1600px;
+      }
+      .card__item{
+          height: 570px;
+          position: relative;
+          margin-top: 50px;
+          margin: 0 auto;
+          
+      }
+      .footer{
+          margin-top:1290px;
+      }
+      .line__con{
+          width: 50px;
+      }
+      .social{
+          padding-left: 20%;
+      }
+      .line{
+          width: 300px;
+          margin-left: 10px;
+      }
+      .call .container{
+          padding-top: 30px;
+      }
+}
